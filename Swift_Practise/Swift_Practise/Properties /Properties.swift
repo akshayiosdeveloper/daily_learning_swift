@@ -11,7 +11,7 @@ class Properties {
     var name: String = "h"
     
     var cr : String {
-        return "abc"
+        return name
     }
     
 }
