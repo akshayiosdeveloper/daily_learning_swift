@@ -13,7 +13,6 @@ class Properties {
    var getFullName: String {
         get { getFullName }
         set {
-        
             lastName = newValue
         }
         
