@@ -16,7 +16,12 @@ class ViewController: UIViewController {
     
     func executePropertyFunction() {
         let obj = Properties()
-        print(obj.cr)
+        //print(obj.getFullName)
+        obj.name = "gobin"
+        obj.lastName = "hell0"
+        obj.getFullName = "akkk"
+        //print(obj.getFullName)
+
     }
 
 }

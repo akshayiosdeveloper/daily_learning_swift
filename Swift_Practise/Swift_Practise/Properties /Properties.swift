@@ -8,10 +8,15 @@
 import Foundation
 
 class Properties {
-    var name: String = "h"
-    
-    var cr : String {
-        return name
+    var name: String = "akshay"
+    var lastName = " kumar"
+   var getFullName: String {
+        get { getFullName }
+        set {
+        
+            lastName = newValue
+        }
+        
     }
     
 }
