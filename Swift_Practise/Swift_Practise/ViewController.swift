@@ -8,10 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var person: Person? {
+        willSet {
+          print("== called before setting new value ==")
+            if let name = newValue?.name {
+                print("new name is \(name)")
+            }
+        }
+        didSet {
+            print("== called after setting new value ==")
+            if let name =  person?.name {
+                print("== new name \(name)")
+                print("==old name \(oldValue?.name)")
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        executePropertyFunction()
+        //executePropertyFunction()
+        person = Person(name: "akshay", age: 34)
+        person?.name = "let"
     }
     
     func executePropertyFunction() {
@@ -23,6 +39,9 @@ class ViewController: UIViewController {
         //print(obj.getFullName)
 
     }
-
+    func executePropertyObserver() {
+     
+    }
+    
 }
 

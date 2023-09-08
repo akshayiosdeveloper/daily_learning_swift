@@ -7,6 +7,7 @@
 
 import Foundation
 
+// exmaple of computed propreties
 class Properties {
     var name: String = "akshay"
     var lastName = " kumar"
@@ -18,4 +19,11 @@ class Properties {
         
     }
     
+}
+// Example of property observer
+// willSet and didSet
+
+struct Person {
+    var name: String
+    var age : Int
 }
