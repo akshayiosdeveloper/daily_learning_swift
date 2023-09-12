@@ -27,3 +27,26 @@ struct Person {
     var name: String
     var age : Int
 }
+
+class Score {
+    
+    var run = 0 {
+        willSet {
+            print(newValue)
+        }
+        didSet {
+            if run != oldValue {
+                print("\(oldValue)")
+                
+            }
+        
+        }
+    }
+}
+
+enum SomeEnumeration {
+    static var storedTypeProperty = "Some value."
+    static var computedTypeProperty: Int {
+        return 6
+    }
+}
