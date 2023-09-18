@@ -31,8 +31,10 @@ class ViewController: UIViewController {
        // person = Person(name: "akshay", age: 34)
       //  person?.name = "let"
         
-        let boj = Score()
-        boj.run = 10
+      //  let boj = Score()
+       // boj.run = 10
+        
+        Dummy.execute()
     }
     
     func executePropertyFunction() {
