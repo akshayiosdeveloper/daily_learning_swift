@@ -67,7 +67,7 @@ enum SomeEnumeration {
 
 
 // 𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞   Limitations of property wrappers 𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞𝌞
-//The new property wrappers’ syntax looks good but it also contains several limitations, the main ones being:
+//The new property wrappers’syntax looks good but it also contains several limitations, the main ones being:
 //
 //They can’t participate in error handling. The wrapped value is a property (not a method), and we can’t mark the getter or setter as throws. For instance, in our Email example, it is not possible to throw an error if a user tries to set an invalid email. We can return nil or crash the app with a fatalError() call, which could be unacceptable in some cases.
 //Applying multiple wrappers to the property is not allowed. For example, it would be better to have a separate @CaseInsensitive wrapper and combine it with an @Email wrapper instead of making the @Email wrapper case insensitive. But constructions like these are forbidden and lead to compilation errors.
