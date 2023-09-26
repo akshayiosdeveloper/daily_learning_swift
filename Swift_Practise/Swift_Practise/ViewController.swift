@@ -34,7 +34,9 @@ class ViewController: UIViewController {
       //  let boj = Score()
        // boj.run = 10
         
-        Dummy.execute()
+       // Dummy.execute()
+        
+        self.executeMethodChapter()
     }
     
     func executePropertyFunction() {
@@ -48,6 +50,12 @@ class ViewController: UIViewController {
     }
     func executePropertyObserver() {
      
+    }
+    func executeMethodChapter() {
+        let somePoint = Point(x: 4.0, y: 5.0)
+        if somePoint.isToTheRightOf(x: 1.0) {
+            print("This point is to the right of the line where x == 1.0")
+        }
     }
     
 }
